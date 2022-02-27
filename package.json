@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "firebase-micro-frontend-app",
   "main": "firebaseFunctions.js",
   "scripts": {
     "dev": "next src/",

@@ -1,7 +1,11 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
@@ -16,5 +20,17 @@
       "npm --prefix \"$PROJECT_DIR\" run build"
     ],
     "runtime": "nodejs14"
+  },
+  "emulators": {
+    "functions": {
+      "port": 5002
+    },
+    "hosting": {
+      "port": 5001,
+      "host": "localhost"
+    },
+    "ui": {
+      "enabled": true
+    }
   }
 }
